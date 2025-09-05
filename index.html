@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CMC Móveis Planejados | Móveis sob medida e projetos 3D</title>
+  <meta name="description" content="CMC Móveis Planejados: fabricação de móveis sob medida, projetos 3D, montagem profissional e consultoria em design de interiores." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="CMC Móveis Planejados" />
+  <meta property="og:description" content="Transformamos espaços em ambientes únicos com móveis planejados sob medida." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="icon" href="/cmcmoveisplanejados/images/logo.jpg">
+  
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "CMC Móveis Planejados",
+    "url": "https://www.seudominio.com.br/",
+    "logo": "images/logo.jpg",
+    "image": "images/logo.jpg",
+    "description": "Fabricação de móveis sob medida, projetos 3D e montagem profissional.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua José Feliciano de Azevedo, 220 - Bairro Bela Vista",
+      "addressLocality": "Contagem",
+      "addressRegion": "MG",
+      "postalCode": "32010190",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Contagem e cidades próximas",
+    "telephone": "+55 31 98910-9213",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b1b2a;
+      --bg-2:#0f2436;
+      --primary:#f59e0b;
+      --primary-2:#d97706;
+      --text:#e8edf3;
+      --muted:#b7c3cf;
+      --card:#11273a;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.6 "Inter",system-ui,-apple-system,Segoe UI,Roboto; color:var(--text); background:linear-gradient(180deg,var(--bg),var(--bg-2));}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block;border-radius:12px}
+    .container{max-width:1140px;margin:auto;padding:0 20px}
+    .btn{display:inline-flex;gap:.5rem;align-items:center;background:var(--primary);color:#111;padding:.9rem 1.2rem;border-radius:12px;font-weight:700;border:0;cursor:pointer;transition:.2s all}
+    .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow);background:var(--primary-2)}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,27,42,.65);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
+    .brand img{height:50px}
+    section{padding:60px 0}
+    h2{text-align:center;margin-bottom:30px;font-size:2rem;color:var(--primary)}
+    .grid{display:grid;gap:20px}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .grid-5{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .carousel-container{position:relative;max-width:800px;margin:40px auto;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .carousel-slide{display:none;width:100%;position:relative}
+    .carousel-slide.active{display:block}
+    .carousel-slide img{width:100%;height:400px;object-fit:cover;display:block;border-radius:var(--radius)}
+    .carousel-prev,.carousel-next{cursor:pointer;position:absolute;top:50%;width:auto;padding:16px;margin-top:-22px;color:white;font-weight:700;font-size:20px;transition:.6s ease;border-radius:0 3px 3px 0;user-select:none;background-color:rgba(0,0,0,.7);border:none;z-index:10}
+    .carousel-next{right:0;border-radius:3px 0 0 3px}
+    .carousel-prev:hover,.carousel-next:hover{background-color:rgba(0,0,0,.9)}
+    .card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .float-whats{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 18px;border-radius:50px;box-shadow:var(--shadow);font-weight:700;z-index:1000;text-decoration:none}
+    .float-instagram{position:fixed;bottom:80px;right:20px;background:#E4405F;color:#fff;padding:12px 18px;border-radius:50px;box-shadow:var(--shadow);font-weight:700;z-index:1000;text-decoration:none}
+    .float-whats:hover,.float-instagram:hover{transform:translateY(-2px);box-shadow:0 15px 35px rgba(0,0,0,.4)}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+    .contact form{display:flex;flex-direction:column;gap:15px}
+    .contact input, .contact textarea{padding:12px;border:1px solid #333;border-radius:8px;background:var(--card);color:var(--text);font-family:inherit}
+    .contact input:focus, .contact textarea:focus{outline:none;border-color:var(--primary)}
+    .footer{background:var(--card);padding:20px 0;text-align:center;margin-top:60px}
+    @media (max-width: 768px) {
+      .contact{grid-template-columns:1fr}
+      nav{flex-direction:column;gap:15px}
+      .menu{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#home" aria-label="CMC Móveis Planejados">
+          <img src="/cmcmoveisplanejados/images/logo.jpg" alt="CMC Móveis Planejados logo">
+          <span>CMC Móveis Planejados</span>
+        </a>
+        <div class="menu" aria-label="Navegação principal">
+          <a href="#home">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#blog">Blog</a>
+          <a href="#contato" class="btn btn-outline">Orçamento</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section (Home) -->
+  <section id="home" style="padding: 100px 0; text-align: center; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1556911220-bff317071072?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover; color: var(--text);">
+    <div class="container">
+      <h1>Transforme seu espaço com móveis planejados</h1>
+      <p style="font-size: 1.2rem; margin-bottom: 30px;">Qualidade, design e funcionalidade para o seu lar ou escritório.</p>
+      <a href="#contato" class="btn">Solicite seu Orçamento</a>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 30px auto;">A CMC Móveis Planejados é especialista na criação de ambientes personalizados e funcionais. Com anos de experiência, transformamos seus sonhos em realidade, oferecendo soluções sob medida para cada canto da sua casa ou escritório. Nosso compromisso é com a qualidade, inovação e a satisfação total do cliente, desde o projeto inicial até a montagem final.</p>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Nossa Missão</h3>
+          <p>Oferecer móveis planejados de alta qualidade, com design inovador e funcionalidade, superando as expectativas dos clientes e criando ambientes que inspirem bem-estar e produtividade.</p>
+        </div>
+        <div class="card">
+          <h3>Nossa Visão</h3>
+          <p>Ser referência no mercado de móveis planejados, reconhecida pela excelência no atendimento, inovação em design e compromisso com a sustentabilidade.</p>
+        </div>
+        <div class="card">
+          <h3>Nossos Valores</h3>
+          <ul>
+            <li>**Qualidade:** Excelência em cada detalhe, do material ao acabamento.</li>
+            <li>**Inovação:** Busca constante por novas tendências e tecnologias.</li>
+            <li>**Comprometimento:** Dedicação total à satisfação do cliente.</li>
+            <li>**Transparência:** Relações claras e honestas com todos.</li>
+            <li>**Sustentabilidade:** Respeito ao meio ambiente em todos os processos.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Por que escolher a CMC?</h3>
+          <p>Escolher a CMC Móveis Planejados significa optar por um serviço diferenciado, onde cada projeto é tratado com exclusividade. Contamos com uma equipe de profissionais qualificados, tecnologia de ponta e um atendimento personalizado para garantir que suas ideias se tornem ambientes perfeitos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="grid grid-5">
+        <div class="card">
+          <img src="/cmcmoveisplanejados/images/cozinha_planejada.jpg" alt="Móveis planejados para cozinha">
+          <h3>Cozinha Planejada</h3>
+          <p>Funcionalidade e sofisticação para o coração da casa.</p>
+        </div>
+        <div class="card">
+          <img src="/cmcmoveisplanejados/images/quarto_planejado.jpg" alt="Móveis planejados para quarto">
+          <h3>Quarto Planejado</h3>
+          <p>Ambientes que unem conforto e organização sob medida.</p>
+        </div>
+        <div class="card">
+          <img src="/cmcmoveisplanejados/images/banheiro_planejado.jpg" alt="Móveis planejados para banheiro">
+          <h3>Banheiro Planejado</h3>
+          <p>Design otimizado para praticidade no dia a dia.</p>
+        </div>
+        <div class="card">
+          <img src="/cmcmoveisplanejados/images/escritorio_planejado.jpg" alt="Móveis planejados para escritório">
+          <h3>Escritório Planejado</h3>
+          <p>Espaços funcionais que aumentam a produtividade.</p>
+        </div>
+        <div class="card">
+          <img src="/cmcmoveisplanejados/images/projetos_desenvolvimento.jpg" alt="Criação e desenvolvimento de projetos">
+          <h3>Assessoria e Venda de Projetos 3D</h3>
+          <p>Assessoria completa e venda de projetos 3D para otimizar seus espaços.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos">
+    <div class="container">
+      <h2>Nossos Projetos</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 30px auto;">Explore alguns dos nossos trabalhos mais recentes e inspire-se para o seu próximo projeto. Cada móvel é uma obra de arte, feita sob medida para atender às suas necessidades e superar suas expectativas.</p>
+      <!-- Carrossel de imagens -->
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_01.jpg" alt="Projeto Cozinha Planejada - Projeto 3D e Execução">
+        </div>
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_02.jpg" alt="Projeto Cozinha Planejada - Móveis sob medida">
+        </div>
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_03.jpg" alt="Projeto Cozinha Planejada - Design moderno">
+        </div>
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_04.jpg" alt="Projeto Cozinha Planejada - Funcionalidade e estilo">
+        </div>
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_05.jpg" alt="Projeto Escritório Planejado - Home office">
+        </div>
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_06.jpg" alt="Projeto Escritório Planejado - Espaço otimizado">
+        </div>
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_07.jpg" alt="Projeto Escritório Planejado - Móveis funcionais">
+        </div>
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_08.jpg" alt="Projeto Cozinha Planejada - Acabamento premium">
+        </div>
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_09.jpg" alt="Projeto Cozinha Planejada - Detalhes em mármore">
+        </div>
+        <div class="carousel-slide">
+          <img src="/cmcmoveisplanejados/images/projeto_10.jpg" alt="Projeto Cozinha Planejada - Design contemporâneo">
+        </div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+  <!-- Depoimentos -->
+  <section id="depoimentos">
+    <div class="container">
+      <h2>O que nossos clientes dizem</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <p>"A CMC Móveis Planejados superou minhas expectativas! O projeto da minha cozinha ficou incrível, exatamente como eu sonhava. Profissionalismo e qualidade impecáveis."</p>
+          <h4>Maria Silva</h4>
+          <span>Cozinha Planejada</span>
+        </div>
+        <div class="card">
+          <p>"Fiquei impressionado com a atenção aos detalhes e a qualidade dos móveis do meu escritório. A equipe da CMC é muito competente e entregou tudo no prazo."</p>
+          <h4>João Santos</h4>
+          <span>Escritório Planejado</span>
+        </div>
+        <div class="card">
+          <p>"Meu quarto planejado ficou perfeito! Otimizaram cada espaço e o resultado final é um ambiente lindo e funcional. Recomendo a CMC de olhos fechados!"</p>
+          <h4>Ana Oliveira</h4>
+          <span>Quarto Planejado</span>
+        </div>
+        <div class="card">
+          <p>"Precisava de um projeto 3D para visualizar minha reforma e a CMC me atendeu prontamente. A assessoria foi excelente e me ajudou a tomar as melhores decisões."</p>
+          <h4>Pedro Souza</h4>
+          <span>Assessoria e Venda de Projetos 3D</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos">
+    <div class="container">
+      <h2>O que nossos clientes dizem</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <p>"A CMC Móveis Planejados superou minhas expectativas! O projeto da minha cozinha ficou incrível, exatamente como eu sonhava. Profissionalismo e qualidade impecáveis."</p>
+          <h4>Maria Silva</h4>
+          <span>Cozinha Planejada</span>
+        </div>
+        <div class="card">
+          <p>"Fiquei impressionado com a atenção aos detalhes e a qualidade dos móveis do meu escritório. A equipe da CMC é muito competente e entregou tudo no prazo."</p>
+          <h4>João Santos</h4>
+          <span>Escritório Planejado</span>
+        </div>
+        <div class="card">
+          <p>"Meu quarto planejado ficou perfeito! Otimizaram cada espaço e o resultado final é um ambiente lindo e funcional. Recomendo a CMC de olhos fechados!"</p>
+          <h4>Ana Oliveira</h4>
+          <span>Quarto Planejado</span>
+        </div>
+        <div class="card">
+          <p>"Precisava de um projeto 3D para visualizar minha reforma e a CMC me atendeu prontamente. A assessoria foi excelente e me ajudou a tomar as melhores decisões."</p>
+          <h4>Pedro Souza</h4>
+          <span>Assessoria e Venda de Projetos 3D</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog">
+    <div class="container">
+      <h2>Nosso Blog</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 30px auto;">Fique por dentro das últimas tendências em design de interiores, dicas de organização e novidades sobre móveis planejados. Nosso blog é sua fonte de inspiração para transformar ambientes.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>5 Dicas para otimizar sua Cozinha Planejada</h3>
+          <p>Descubra como aproveitar ao máximo cada canto da sua cozinha com soluções inteligentes e funcionais.</p>
+          <a href="#" class="btn btn-outline">Ler Mais</a>
+        </div>
+        <div class="card">
+          <h3>Como escolher o Quarto Planejado ideal para você</h3>
+          <p>Guia completo para criar um ambiente de descanso perfeito, unindo conforto, estilo e praticidade.</p>
+          <a href="#" class="btn btn-outline">Ler Mais</a>
+        </div>
+        <div class="card">
+          <h3>Escritório em Casa: Dicas para um Home Office Produtivo</h3>
+          <p>Transforme seu espaço de trabalho em um ambiente inspirador e eficiente com móveis planejados e organização.</p>
+          <a href="#" class="btn btn-outline">Ler Mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  <!-- Contato / Orçamento -->
+  <section id="contato">
+    <div class="container">
+      <h2>Solicite um orçamento</h2>
+      <div class="contact">
+        <form onsubmit="return enviarWhats(event)">
+          <input required name="nome" placeholder="Seu nome" />
+          <input required name="telefone" placeholder="WhatsApp" />
+          <textarea name="mensagem" rows="4" placeholder="Descreva seu projeto"></textarea>
+          <button class="btn" type="submit">Enviar no WhatsApp</button>
+        </form>
+        <div class="card">
+          <h3>Informações</h3>
+          <p><strong>Telefone/WhatsApp:</strong> (31) 98910-9213<br/>
+             <strong>E-mail:</strong> cmcmoveisplanejados@gmail.com<br/>
+             <strong>Instagram:</strong> @cmc.moveisplanejados<br/>
+             <strong>Endereço:</strong> Rua José Feliciano de Azevedo, 220 - Bairro Bela Vista, Contagem - MG, CEP 32010190<br/>
+             <strong>Atendimento:</strong> Cidade de Contagem e região</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> CMC Móveis Planejados — Todos os direitos reservados.</div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="float-whats" id="whatsFloat" href="https://wa.me/5531989109213?text=Olá%2C%20tenho%20interesse%20em%20móveis%20planejados" target="_blank" rel="noopener" aria-label="Abrir conversa no WhatsApp">
+    WhatsApp
+  </a>
+  
+  <a class="float-instagram" href="https://instagram.com/cmc.moveisplanejados" target="_blank" rel="noopener" aria-label="Seguir no Instagram">
+    Instagram
+  </a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Set year
+      const yearElement = document.getElementById("year");
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+
+      // Carousel functionality
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      const prevBtn = document.querySelector(".carousel-prev");
+      const nextBtn = document.querySelector(".carousel-next");
+
+      console.log("Slides encontrados:", slides.length);
+
+      function showSlide(index) {
+        // Hide all slides
+        slides.forEach((slide, i) => {
+          slide.style.display = 'none';
+          slide.classList.remove('active');
+        });
+        
+        // Show current slide
+        if (slides[index]) {
+          slides[index].style.display = 'block';
+          slides[index].classList.add('active');
+          console.log("Mostrando slide:", index);
+        }
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+        console.log("Próximo slide:", currentSlide);
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+        console.log("Slide anterior:", currentSlide);
+      }
+
+      // Initialize carousel
+      if (slides.length > 0) {
+        showSlide(0);
+        
+        // Add event listeners
+        if (prevBtn) {
+          prevBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            prevSlide();
+          });
+        }
+        if (nextBtn) {
+          nextBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            nextSlide();
+          });
+        }
+        
+        // Auto-advance carousel every 5 seconds
+        setInterval(nextSlide, 5000);
+      }
+    });
+
+    function enviarWhats(e){
+      e.preventDefault();
+      const f = e.target;
+      const texto = encodeURIComponent(
+        `Olá, sou ${f.nome.value}.\n`+
+        `${f.mensagem.value?`Detalhes: ${f.mensagem.value}\n`:``}` +
+        `Meu WhatsApp: ${f.telefone.value}`
+      );
+      const numero = '5531989109213';
+      window.open(`https://wa.me/${numero}?text=${texto}`, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>
+
